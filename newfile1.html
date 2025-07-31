@@ -77,3 +77,52 @@
     </div>
   </body>
 </html>
+
+<!-- Visible Cars -->
+<div class="row" id="car-list">
+  <div class="col-md-4">
+    <div class="card mb-4">
+      <img src="car1.jpg" class="card-img-top" alt="Car 1">
+      <div class="card-body">
+        <h5 class="card-title">Car 1</h5>
+        <p class="card-text">Description for Car 1</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden Cars (initially) -->
+  <div class="col-md-4 more-car d-none">
+    <div class="card mb-4">
+      <img src="car2.jpg" class="card-img-top" alt="Car 2">
+      <div class="card-body">
+        <h5 class="card-title">Car 2</h5>
+        <p class="card-text">Description for Car 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 more-car d-none">
+    <div class="card mb-4">
+      <img src="car3.jpg" class="card-img-top" alt="Car 3">
+      <div class="card-body">
+        <h5 class="card-title">Car 3</h5>
+        <p class="card-text">Description for Car 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById("seeMoreBtn");
+  const hiddenCars = document.querySelectorAll(".more-car");
+
+  btn.addEventListener("click", () => {
+    hiddenCars.forEach(car => car.classList.remove("d-none"));
+    btn.style.display = "none"; // hide the button after showing
+  });
+</script>
+
+<!-- Button -->
+<div class="text-center mt-4">
+  <button class="btn btn-success" id="seeMoreBtn">See More Cars</button>
+</div>
