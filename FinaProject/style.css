@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Impact', sans-serif;
+  background-color: #1e1e1e;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #445b47;
+  border: 2px solid #222;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  padding: 10px;
+}
+
+.intro-img {
+  width: 100%;
+  border-bottom: 2px solid #000;
+}
+
+.overlay-text {
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+button {
+  margin: 15px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
